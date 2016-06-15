@@ -1,4 +1,6 @@
-syntax on
+set nocompatible                  " should be the first option, as it influences the other ones
+
+syntax enable
 colorscheme morning
 
 set tabstop=4
@@ -6,8 +8,16 @@ set softtabstop=4
 set expandtab
 
 set showcmd
+set showmode
+
+set hidden
 
 "set cursorline
+set number
+set ruler                         " show cursor position
+
+set incsearch
+set hlsearch
 
 set wildmenu
 
