@@ -20,6 +20,7 @@ set ruler                         " show cursor position
 
 set incsearch
 set hlsearch
+set ignorecase                    " I love ignorecase at the moment
 
 set wildmenu
 
