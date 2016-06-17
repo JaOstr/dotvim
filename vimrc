@@ -1,5 +1,7 @@
 set nocompatible                  " should be the first option, as it influences the other ones
 
+set cpoptions+=$                  " add the $ sign for changed text end
+
 syntax enable
 filetype plugin indent on
 
