@@ -5,6 +5,7 @@ set cpoptions+=$                  " add the $ sign for changed text end
 syntax enable
 filetype plugin indent on
 
+set t_Co=256
 colorscheme morning
 
 set tabstop=4
@@ -31,6 +32,10 @@ set wildmenu                      " menu for completion
 set splitright
 set splitbelow
 
+set showbreak=↪\ 
+set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+:nnoremap <leader>* :set list!<CR>
+
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd Filetype java setlocal number
 autocmd Filetype c setlocal number
@@ -40,6 +45,7 @@ autocmd Filetype python setlocal number
 :nmap   <F6> :cnext<CR>
 :nmap <S-F6> :cprev<CR>
 
+command CDC cd %:p:h
 
 " Pathogen
 execute pathogen#infect()
