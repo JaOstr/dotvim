@@ -1,6 +1,5 @@
-I will keep my vim config files here.
+==== My vim config files ====
 
-The general idea:
-git clone https://j-ostrowski@bitbucket.org/j-ostrowski/dotvim.git
-ln -s dotvim .vim
+Usage:
+git clone https://j-ostrowski@bitbucket.org/j-ostrowski/dotvim.git ~/.vim
 
