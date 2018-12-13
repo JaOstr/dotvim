@@ -37,6 +37,7 @@ set listchars=tab:→\ ,eol:¬,space:∙,nbsp:•,trail:∙,extends:…,precedes
 :nnoremap <leader>* :set list!<CR>
 
 runtime! ftplugin/man.vim
+set keywordprg=:Man
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd Filetype java setlocal number
