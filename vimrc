@@ -32,9 +32,12 @@ set wildmenu                      " menu for completion
 set splitright
 set splitbelow
 
-set showbreak=↪\ 
-set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+set showbreak=^\ 
+set listchars=tab:→\ ,eol:¬,nbsp:•,trail:∙,extends:…,precedes:…
 :nnoremap <leader>* :set list!<CR>
+
+runtime! ftplugin/man.vim
+set keywordprg=:Man
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd Filetype java setlocal number
